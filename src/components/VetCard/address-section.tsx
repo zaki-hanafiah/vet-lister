@@ -8,7 +8,6 @@ const AddressSection = ({ address, contact }: TVetAddressSection) => (
             <PushpinFilled />
             <span style={{ paddingLeft: '8px' }}>{address}</span>
         </p>
-
         <p>
             <PhoneFilled />
             <a href={`tel:${contact}`} style={{ paddingLeft: '8px' }}>

@@ -1,0 +1,30 @@
+type Veterinary @collection(name: "vets") {
+    address: String
+    operating_hours: OperatingHours
+    contact: String
+    social: Social
+    name: String
+    image: String
+    services: [String],
+    rating: Float
+}
+
+type TimeSlot @embedded {
+    opens: String!
+    closes: String!
+}
+
+type OperatingHours @embedded {
+    weekdays: TimeSlot!
+    weekends: TimeSlot!
+}
+
+type Social @embedded {
+    website: String
+    facebook: String
+    instagram: String
+}
+
+type Query {
+    allVets: [Veterinary!]
+}
