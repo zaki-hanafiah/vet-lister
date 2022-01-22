@@ -1,21 +1,14 @@
 import type { NextPage } from 'next'
-import { Layout } from 'antd'
 import { getVetsList } from '@/api/vets'
+import Main from '@/components/Main'
+import { IVeterinary } from '@/definitions'
 
 const Home = ({ vets_list }: NextPage & THome) => {
-    const { Header, Footer, Content } = Layout
-    console.log(vets_list)
-    return (
-        <Layout>
-            <Header>Header</Header>
-            <Content>Content</Content>
-            <Footer>Footer</Footer>
-        </Layout>
-    )
+    return <Main vets_list={vets_list} />
 }
 
 type THome = {
-    vets_list: unknown
+    vets_list: IVeterinary[]
 }
 
 export const getServerSideProps = async () => {

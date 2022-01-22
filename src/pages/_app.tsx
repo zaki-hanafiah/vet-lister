@@ -2,8 +2,8 @@ import type { AppProps } from 'next/app'
 
 require('@/styles/main.less')
 
-function MyApp({ Component, pageProps }: AppProps) {
+function VetLister({ Component, pageProps }: AppProps) {
     return <Component {...pageProps} />
 }
 
-export default MyApp
+export default VetLister
