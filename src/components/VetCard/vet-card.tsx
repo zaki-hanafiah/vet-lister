@@ -16,7 +16,7 @@ const VetCard = ({ vet_props }: TVetCard) => {
             <VetMainContent name={name} image={image} services={services} />
             <Divider orientation="left">Contact Details</Divider>
             <VetAddressSection address={address} contact={contact} />
-            <Divider orientation="left">Social Details</Divider>
+            <Divider orientation="left">Web & Social Details</Divider>
             <Space direction="vertical">
                 {website && <SocialLink icon={<HomeFilled />} text={website} />}
                 {facebook && (

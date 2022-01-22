@@ -1,14 +1,22 @@
 import * as React from 'react'
-import { Layout, Menu } from 'antd'
+import { Col, Layout, Menu, Row, Space } from 'antd'
 import { IVeterinary } from '@/definitions'
 import VetListBody from '@/components/VetListBody'
+import SearchInput from '@/components/SearchInput'
 
 const Main = ({ vets_list }: TMain) => {
-    const { useEffect } = React
-    // workaround for warnings from antd menu when used in SSR: https://github.com/ant-design/ant-design/issues/30396
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
-    React['useEffectLayout'] = useEffect
+    const { useState, useEffect } = React
+    const [list, setList] = useState<IVeterinary[]>([])
+    const [searched_list, setSearchedList] = useState<IVeterinary[]>([])
+    // const [filtered_list, setFilteredList] = useState<IVeterinary[]>([])
+
+    useEffect(() => {
+        if (vets_list) {
+            setList(vets_list)
+            setSearchedList(vets_list)
+        }
+    }, [vets_list])
+
     const { Header, Footer, Content } = Layout
     return (
         <Layout className="layout">
@@ -25,7 +33,21 @@ const Main = ({ vets_list }: TMain) => {
                         background: '#fff',
                     }}
                 >
-                    <VetListBody vets_list={vets_list} />
+                    <Row>
+                        <Col span={24}>
+                            <Space direction="horizontal">
+                                <SearchInput
+                                    list={list}
+                                    setSearchResults={setSearchedList}
+                                />
+                            </Space>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col span={24}>
+                            <VetListBody vets_list={searched_list} />
+                        </Col>
+                    </Row>
                 </div>
             </Content>
             <Footer style={{ textAlign: 'center' }}>
