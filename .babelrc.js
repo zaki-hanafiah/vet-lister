@@ -6,5 +6,8 @@ module.exports = {
             'import',
             { libraryName: 'antd', libraryDirectory: 'lib', style: true },
         ],
+        ['module-resolver', { alias: { '@': './src' } }],
+        ['inline-react-svg'],
+        ['add-react-displayname'],
     ],
 }
