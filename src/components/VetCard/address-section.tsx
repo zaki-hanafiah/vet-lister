@@ -2,7 +2,7 @@ import { Space } from 'antd'
 import { PushpinFilled, PhoneFilled } from '@ant-design/icons'
 import * as React from 'react'
 
-const VetAddressSection = ({ address, contact }: TVetAddressSection) => (
+const AddressSection = ({ address, contact }: TVetAddressSection) => (
     <Space direction="vertical">
         <p>
             <PushpinFilled />
@@ -23,4 +23,4 @@ type TVetAddressSection = {
     contact: string
 }
 
-export default VetAddressSection
+export default AddressSection

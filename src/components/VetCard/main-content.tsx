@@ -1,10 +1,9 @@
 import { Row, Col, Image } from 'antd'
 import * as React from 'react'
 
-const VetMainContent = ({ name, image, services }: TVetMainContent) => (
+const MainContent = ({ name, image, services }: TVetMainContent) => (
     <Row>
         <Col span={12}>
-            {' '}
             <Image
                 width={272}
                 alt={`${name}-img`}
@@ -29,4 +28,4 @@ type TVetMainContent = {
     services: string[]
 }
 
-export default VetMainContent
+export default MainContent

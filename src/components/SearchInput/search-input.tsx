@@ -2,23 +2,14 @@ import { Input } from 'antd'
 import * as React from 'react'
 import { IVeterinary } from '@/definitions'
 
-const SearchInput = ({ setSearchResults, list }: TSearchInput) => {
-    const { useCallback } = React
+const SearchInput = ({ setSearchValue }: TSearchInput) => {
     const handleSearch = (value: string) => {
-        if (value === '') {
-            resetSearch()
+        if (value === '' || !value) {
+            setSearchValue('')
             return
         }
-        setSearchResults(
-            list.filter((record: IVeterinary) =>
-                record.name.toLowerCase().includes(value.toLowerCase())
-            )
-        )
+        setSearchValue(value)
     }
-
-    const resetSearch = useCallback(() => {
-        setSearchResults(list)
-    }, [list, setSearchResults])
 
     return (
         <Input.Search
@@ -35,8 +26,7 @@ const SearchInput = ({ setSearchResults, list }: TSearchInput) => {
 }
 
 type TSearchInput = {
-    list: IVeterinary[]
-    setSearchResults: React.Dispatch<React.SetStateAction<IVeterinary[]>>
+    setSearchValue: React.Dispatch<React.SetStateAction<string>>
 }
 
 export default SearchInput
