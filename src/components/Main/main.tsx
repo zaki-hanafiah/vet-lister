@@ -61,7 +61,7 @@ const Main = ({ vets_list }: TMain) => {
         <Layout className="layout">
             <Header>
                 <div className="logo" />
-                <Menu theme="dark" mode="horizontal" />
+                <Menu theme="dark" mode="horizontal" items={[]} />
             </Header>
             <Content style={{ padding: '0 50px' }}>
                 <div
@@ -74,7 +74,7 @@ const Main = ({ vets_list }: TMain) => {
                 >
                     <Row>
                         <Col span={22} offset={1}>
-                            <Space direction="horizontal" size="large">
+                            <Space orientation="horizontal" size="large">
                                 <SearchInput setSearchValue={setSearchValue} />
                                 <LocationFilter
                                     setFilterValue={setFilterValue}
