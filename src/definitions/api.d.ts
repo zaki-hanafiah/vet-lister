@@ -1,4 +1,5 @@
 export interface IVeterinary {
+    _id: string
     address: string
     operating_hours: TOperatingHours
     contact: string

@@ -21,9 +21,9 @@ const VetCard = ({ vet_props, is_loading }: TVetCard) => {
         >
             <Skeleton loading={is_loading}>
                 <MainContent name={name} image={image} services={services} />
-                <Divider orientation="left">Contact Details</Divider>
+                <Divider titlePlacement="start">Contact Details</Divider>
                 <AddressSection address={address} contact={contact} />
-                <Divider orientation="left">Web & Social Details</Divider>
+                <Divider titlePlacement="start">Web & Social Details</Divider>
                 <Space direction="vertical">
                     {website && (
                         <SocialLink icon={<HomeFilled />} text={website} />
