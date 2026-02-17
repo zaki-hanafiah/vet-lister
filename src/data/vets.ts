@@ -41,7 +41,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-7980 1234',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipNhE1_iM7bCzO0vKJp3T4T-vNB-BvCtE4u9H_A=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/2E7D32/FFFFFF?text=Vet4U+Pet+Clinic',
     },
     {
         _id: '2',
@@ -66,7 +66,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-4296 5678',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipNK7X-GlE3lG3qNjYqK4v7L6tN9aR2mX5YsHcE=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/1565C0/FFFFFF?text=Pawsome+Vet+Clinic',
     },
     {
         _id: '3',
@@ -90,7 +90,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-8787 9999',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipN9j5kKqKxLqKxLqKxLqKxLqKxLqKxLqKxLqK=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/FF6F00/FFFFFF?text=Happy+Paws+Animal+Hospital',
     },
     {
         _id: '4',
@@ -114,7 +114,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-3373 4567',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipM8j6iKwLwKwLwKwLwKwLwKwLwKwLwKwLwKw=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/7B1FA2/FFFFFF?text=Klinik+Haiwan+Klang+Utama',
     },
     {
         _id: '5',
@@ -139,7 +139,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-5632 8901',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipO2l5H_M4M4M4M4M4M4M4M4M4M4M4M4M=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/00838F/FFFFFF?text=Sunway+Veterinary+Centre',
     },
     {
         _id: '6',
@@ -163,7 +163,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-7878 2345',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipP6m6I_N5N5N5N5N5N5N5N5N5N5N5N5N=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/EF6C00/FFFFFF?text=Pet+Care+Plus+Clinic',
     },
     {
         _id: '7',
@@ -184,7 +184,7 @@ export const vetsData: Vet[] = [
         social: { website: '', facebook: 'KDUAnimalClinic', instagram: '' },
         contact: '+603-7722 3456',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipQ7n7J_O6O6O6O6O6O6O6O6O6O6O6O6O=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/5D4037/FFFFFF?text=Klinik+Haiwan+Damansara+Utama',
     },
     {
         _id: '8',
@@ -208,7 +208,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-6258 5678',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipR8k8K_P8P8P8P8P8P8P8P8P8P8P8P8P=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/C62828/FFFFFF?text=Mount+Miriam+Pet+Hospital',
     },
     {
         _id: '9',
@@ -233,7 +233,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-8941 2345',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipS9l9L_Q9Q9Q9Q9Q9Q9Q9Q9Q9Q9Q9Q9Q=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/558B2F/FFFFFF?text=Taman+Equine+Vet+Clinic',
     },
     {
         _id: '10',
@@ -248,12 +248,12 @@ export const vetsData: Vet[] = [
             'Vaccination',
             'Dental Care',
             'Minor Surgery',
-            'Pet Food & Supplies',
+            'Pet Food',
         ],
         social: { website: '', facebook: 'PJOldTownVet', instagram: '' },
         contact: '+603-7782 6789',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipT0m0M_R0R0R0R0R0R0R0R0R0R0R0R=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/6A1B9A/FFFFFF?text=Klinik+Haiwan+PJ+Old+Town',
     },
     {
         _id: '11',
@@ -278,7 +278,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-5634 5678',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipU1n1N_S1S1S1S1S1S1S1S1S1S1S1S=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/00897B/FFFFFF?text=Bandar+Sunway+Animal+Care',
     },
     {
         _id: '12',
@@ -303,7 +303,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-7728 9012',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipV2o2O_T2T2T2T2T2T2T2T2T2T2T2T=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/43A047/FFFFFF?text=Vet+On+The+Park',
     },
     {
         _id: '13',
@@ -323,7 +323,7 @@ export const vetsData: Vet[] = [
         social: { website: '', facebook: 'ShahAlamVetClinic', instagram: '' },
         contact: '+603-5512 3456',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipW3p3P_U3U3U3U3U3U3U3U3U3U3U3U=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/AD1457/FFFFFF?text=Klinik+Veterinar+Shah+Alam',
     },
     {
         _id: '14',
@@ -347,7 +347,7 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-2110 6789',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipX4q4Q_V4V4V4V4V4V4V4V4V4V4V4V=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/00ACC1/FFFFFF?text=City+Vet+Centre',
     },
     {
         _id: '15',
@@ -371,6 +371,6 @@ export const vetsData: Vet[] = [
         },
         contact: '+603-3344 7890',
         rating: 5,
-        image: 'https://lh3.googleusercontent.com/p/AF1QipY5r5R_W5W5W5W5W5W5W5W5W5W5W5W=w400-h300-k-no',
+        image: 'https://placehold.co/600x400/8E24AA/FFFFFF?text=Klang+Vet+Clinic',
     },
 ]
