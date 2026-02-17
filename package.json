@@ -6,7 +6,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "prettify": "prettier --write pages/**/*.ts{,x}"
+        "prettify": "prettier --write pages/**/*.ts{,x}",
+        "prepare": "husky"
     },
     "husky": {
         "hooks": {
@@ -15,8 +16,8 @@
     },
     "lint-staged": {
         "*.{js,ts,tsx}": [
-            "eslint --quiet --fix",
-            "pretty-quick --staged"
+            "eslint --fix",
+            "prettier --write"
         ]
     },
     "dependencies": {
