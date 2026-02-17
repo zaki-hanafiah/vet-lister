@@ -3,7 +3,7 @@ import { PushpinFilled, PhoneFilled } from '@ant-design/icons'
 import * as React from 'react'
 
 const AddressSection = ({ address, contact }: TVetAddressSection) => (
-    <Space direction="vertical">
+    <Space orientation="vertical">
         <p>
             <PushpinFilled />
             <span style={{ paddingLeft: '8px' }}>{address}</span>

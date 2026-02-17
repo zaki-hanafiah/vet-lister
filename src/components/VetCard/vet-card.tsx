@@ -24,7 +24,7 @@ const VetCard = ({ vet_props, is_loading }: TVetCard) => {
                 <Divider titlePlacement="start">Contact Details</Divider>
                 <AddressSection address={address} contact={contact} />
                 <Divider titlePlacement="start">Web & Social Details</Divider>
-                <Space direction="vertical">
+                <Space orientation="vertical">
                     {website && (
                         <SocialLink icon={<HomeFilled />} text={website} />
                     )}
